@@ -5,6 +5,8 @@ from pathlib import Path
 
 CSV_FILENAME = "demo_responses.csv"
 REPORT_FILENAME = "context.html"
+# Shareable link when this repo uses GitHub Pages (copy from page source or here).
+REPORT_PUBLIC_URL = "https://sofialarson.github.io/hcde530/Week2/context.html"
 NOT_AVAILABLE = "Not available"
 
 
@@ -127,6 +129,7 @@ def write_html_report(output_path, rows, summary, insights):
 
     insights_html = "".join([f"<li>{html.escape(item)}</li>" for item in insights])
     html_content = f"""<!DOCTYPE html>
+<!-- GitHub Pages — share this report in a browser: {REPORT_PUBLIC_URL} -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
