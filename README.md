@@ -1,6 +1,6 @@
 # HCDE530
 
-This repository contains myproject work for HCDE530.
+This repository contains my project work for HCDE530.
 
 ## Contents
 
