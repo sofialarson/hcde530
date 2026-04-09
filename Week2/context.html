@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 2 Context Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; line-height: 1.4; color: #1f1f1f; }
+    h1, h2 { margin-bottom: 8px; }
+    .muted { color: #555; }
+    table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background: #f3f3f3; }
+    .bar-row { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+    .bar-label { width: 60px; font-weight: bold; }
+    .bar { flex: 1; background: #eee; height: 16px; border-radius: 4px; overflow: hidden; }
+    .bar-fill { background: #3b82f6; height: 16px; }
+    .bar-value { width: 40px; text-align: right; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 14px; margin: 14px 0; }
+  </style>
+</head>
+<body>
+  <h1>Week 2 Data Processing Report</h1>
+  <p class="muted">Generated from <code>demo_responses.csv</code></p>
+
+  <div class="card">
+    <h2>Project Goal</h2>
+    <p>Demonstrate effective data-file processing and highlight important code outcomes in a clear, beginner-friendly format.</p>
+  </div>
+
+  <div class="card">
+    <h2>Data Overview</h2>
+    <p>Total rows processed: <strong>25</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>Word Count Chart</h2>
+    <div class='bar-row'><span class='bar-label'>P01</span><div class='bar'><div class='bar-fill' style='width:90%;'></div></div><span class='bar-value'>38</span></div><div class='bar-row'><span class='bar-label'>P02</span><div class='bar'><div class='bar-fill' style='width:88%;'></div></div><span class='bar-value'>37</span></div><div class='bar-row'><span class='bar-label'>P03</span><div class='bar'><div class='bar-fill' style='width:78%;'></div></div><span class='bar-value'>33</span></div><div class='bar-row'><span class='bar-label'>P04</span><div class='bar'><div class='bar-fill' style='width:76%;'></div></div><span class='bar-value'>32</span></div><div class='bar-row'><span class='bar-label'>P05</span><div class='bar'><div class='bar-fill' style='width:80%;'></div></div><span class='bar-value'>34</span></div><div class='bar-row'><span class='bar-label'>P06</span><div class='bar'><div class='bar-fill' style='width:66%;'></div></div><span class='bar-value'>28</span></div><div class='bar-row'><span class='bar-label'>P07</span><div class='bar'><div class='bar-fill' style='width:80%;'></div></div><span class='bar-value'>34</span></div><div class='bar-row'><span class='bar-label'>P08</span><div class='bar'><div class='bar-fill' style='width:80%;'></div></div><span class='bar-value'>34</span></div><div class='bar-row'><span class='bar-label'>P09</span><div class='bar'><div class='bar-fill' style='width:61%;'></div></div><span class='bar-value'>26</span></div><div class='bar-row'><span class='bar-label'>P10</span><div class='bar'><div class='bar-fill' style='width:76%;'></div></div><span class='bar-value'>32</span></div><div class='bar-row'><span class='bar-label'>P11</span><div class='bar'><div class='bar-fill' style='width:69%;'></div></div><span class='bar-value'>29</span></div><div class='bar-row'><span class='bar-label'>P12</span><div class='bar'><div class='bar-fill' style='width:76%;'></div></div><span class='bar-value'>32</span></div><div class='bar-row'><span class='bar-label'>P13</span><div class='bar'><div class='bar-fill' style='width:97%;'></div></div><span class='bar-value'>41</span></div><div class='bar-row'><span class='bar-label'>P14</span><div class='bar'><div class='bar-fill' style='width:66%;'></div></div><span class='bar-value'>28</span></div><div class='bar-row'><span class='bar-label'>P15</span><div class='bar'><div class='bar-fill' style='width:71%;'></div></div><span class='bar-value'>30</span></div><div class='bar-row'><span class='bar-label'>P16</span><div class='bar'><div class='bar-fill' style='width:76%;'></div></div><span class='bar-value'>32</span></div><div class='bar-row'><span class='bar-label'>P17</span><div class='bar'><div class='bar-fill' style='width:100%;'></div></div><span class='bar-value'>42</span></div><div class='bar-row'><span class='bar-label'>P18</span><div class='bar'><div class='bar-fill' style='width:88%;'></div></div><span class='bar-value'>37</span></div><div class='bar-row'><span class='bar-label'>P19</span><div class='bar'><div class='bar-fill' style='width:64%;'></div></div><span class='bar-value'>27</span></div><div class='bar-row'><span class='bar-label'>P20</span><div class='bar'><div class='bar-fill' style='width:92%;'></div></div><span class='bar-value'>39</span></div><div class='bar-row'><span class='bar-label'>P21</span><div class='bar'><div class='bar-fill' style='width:88%;'></div></div><span class='bar-value'>37</span></div><div class='bar-row'><span class='bar-label'>P22</span><div class='bar'><div class='bar-fill' style='width:73%;'></div></div><span class='bar-value'>31</span></div><div class='bar-row'><span class='bar-label'>P23</span><div class='bar'><div class='bar-fill' style='width:80%;'></div></div><span class='bar-value'>34</span></div><div class='bar-row'><span class='bar-label'>P24</span><div class='bar'><div class='bar-fill' style='width:76%;'></div></div><span class='bar-value'>32</span></div><div class='bar-row'><span class='bar-label'>P25</span><div class='bar'><div class='bar-fill' style='width:78%;'></div></div><span class='bar-value'>33</span></div>
+  </div>
+
+  <div class="card">
+    <h2>Summary Stats</h2>
+    <ul>
+      <li>Total responses: 25</li>
+      <li>Shortest response: 26 words</li>
+      <li>Longest response: 42 words</li>
+      <li>Average response length: 33.3 words</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Plain-Language Insights</h2>
+    <ul><li>There are 25 total responses in this dataset.</li><li>Response length ranges from 26 to 42 words.</li><li>The average response length is 33.3 words.</li><li>Overall, responses are moderately detailed.</li></ul>
+  </div>
+
+  <div class="card">
+    <h2>Row-by-Row Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Participant ID</th>
+          <th>Role</th>
+          <th>Word Count</th>
+          <th>Response Preview</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>P01</td><td>UX Researcher</td><td>38</td><td>I usually start by reviewing whatever documentation exists, ...</td></tr><tr><td>P02</td><td>UX Designer</td><td>37</td><td>The hardest part is getting engineers to understand why we n...</td></tr><tr><td>P03</td><td>Product Manager</td><td>33</td><td>We run two-week sprints and research keeps getting squeezed ...</td></tr><tr><td>P04</td><td>UX Researcher</td><td>32</td><td>Recruiting is always the bottleneck. We spend more time find...</td></tr><tr><td>P05</td><td>Content Strategist</td><td>34</td><td>Nobody invites me into the research phase. I find out what u...</td></tr><tr><td>P06</td><td>UX Designer</td><td>28</td><td>I&#x27;ve started doing five-minute hallway tests with anyone I c...</td></tr><tr><td>P07</td><td>UX Researcher</td><td>34</td><td>The synthesis step is where we lose people. Everyone attends...</td></tr><tr><td>P08</td><td>Product Manager</td><td>34</td><td>My biggest frustration is that research findings don&#x27;t trans...</td></tr><tr><td>P09</td><td>UX Designer</td><td>26</td><td>I find it really hard to push back when someone senior says ...</td></tr><tr><td>P10</td><td>UX Researcher</td><td>32</td><td>Remote sessions have actually improved our geographic divers...</td></tr><tr><td>P11</td><td>Content Strategist</td><td>29</td><td>I&#x27;ve been trying to introduce plain language principles but ...</td></tr><tr><td>P12</td><td>Product Manager</td><td>32</td><td>We don&#x27;t have a dedicated researcher on my team so I end up ...</td></tr><tr><td>P13</td><td>UX Designer</td><td>41</td><td>The gap between what users say they do and what they actuall...</td></tr><tr><td>P14</td><td>UX Researcher</td><td>28</td><td>I&#x27;m spending more time writing reports that nobody reads tha...</td></tr><tr><td>P15</td><td>Product Manager</td><td>30</td><td>Our design system has made things more consistent but it&#x27;s a...</td></tr><tr><td>P16</td><td>UX Designer</td><td>32</td><td>I&#x27;ve started including a confidence rating in my recommendat...</td></tr><tr><td>P17</td><td>UX Researcher</td><td>42</td><td>Accessibility keeps getting treated as a compliance checklis...</td></tr><tr><td>P18</td><td>Content Strategist</td><td>37</td><td>Error messages are the last thing anyone thinks about and th...</td></tr><tr><td>P19</td><td>UX Designer</td><td>27</td><td>I struggle with knowing when I have enough data. There&#x27;s alw...</td></tr><tr><td>P20</td><td>Product Manager</td><td>39</td><td>The most useful thing research has done for us is help us st...</td></tr><tr><td>P21</td><td>UX Researcher</td><td>37</td><td>We&#x27;ve been using AI to help with transcript analysis and it ...</td></tr><tr><td>P22</td><td>UX Designer</td><td>31</td><td>Onboarding is where our product falls apart and everyone kno...</td></tr><tr><td>P23</td><td>Content Strategist</td><td>34</td><td>I&#x27;ve been pushing for a terminology audit across the product...</td></tr><tr><td>P24</td><td>UX Researcher</td><td>32</td><td>The best sessions I run are the ones where I say almost noth...</td></tr><tr><td>P25</td><td>Product Manager</td><td>33</td><td>We did a diary study last year and the data was incredible b...</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
