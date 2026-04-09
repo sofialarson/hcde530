@@ -1,0 +1,29 @@
+# Week2 Cursor Rules
+
+Scope: Applies to this folder (`Week2/`) and all files inside it.
+
+## General
+- Keep changes beginner-friendly and easy to read.
+- Prefer small, focused edits over large rewrites.
+- Preserve existing filenames and folder structure unless explicitly asked.
+
+## Python (`*.py`)
+- Follow PEP 8 basics (clear names, consistent spacing, short functions).
+- Add brief docstrings for functions.
+- Use comments only when logic is not obvious.
+- Prefer simple built-in tools and standard library modules.
+- Do not add new dependencies unless explicitly requested.
+
+## CSV/Data Files (`*.csv`)
+- Do not modify source data values unless explicitly requested.
+- Keep column headers unchanged.
+- Preserve row order unless task requires sorting/filtering.
+
+## Markdown (`*.md`)
+- Keep writing concise and student-friendly.
+- Use clear section headers and short bullet lists.
+- Avoid unnecessary formatting complexity.
+
+## Safety
+- Never delete project files without explicit confirmation.
+- If a request could overwrite important work, ask before proceeding.
