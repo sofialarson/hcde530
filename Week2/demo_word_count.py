@@ -2,10 +2,11 @@ import csv
 import html
 from pathlib import Path
 
-
+# The file read will be the demo_responses.csv. The report of that file will
+# be saved as context.html.
 CSV_FILENAME = "demo_responses.csv"
 REPORT_FILENAME = "context.html"
-# Shareable link when this repo uses GitHub Pages (copy from page source or here).
+# Shareable link when this repo uses GitHub Pages for context.html.
 REPORT_PUBLIC_URL = "https://sofialarson.github.io/hcde530/Week2/context.html"
 NOT_AVAILABLE = "Not available"
 
@@ -15,11 +16,13 @@ def safe_get(row, key):
     value = row.get(key, "").strip()
     return value if value else NOT_AVAILABLE
 
-
+# This counts the number of words in a response from the demo_responses.csv file.
 def count_words(response):
     """Count words in a response string."""
+    # If there is not response or its unavaialable, returns 0. 
     if response == NOT_AVAILABLE:
         return 0
+    # If there is a response, it will count the number of words in the response.
     return len(response.split())
 
 
@@ -45,35 +48,41 @@ def load_rows(filename):
             )
     return rows
 
-
+# This creates statistics for the word counts that will be in the report.
 def summarize(word_counts):
     """Create summary statistics from word counts."""
+    # If there is no word counts, returns 0 for all stats. 
     if not word_counts:
         return {"total": 0, "shortest": 0, "longest": 0, "average": 0.0}
     return {
+      # Returns the total word counts for the respective statistics.
         "total": len(word_counts),
         "shortest": min(word_counts),
         "longest": max(word_counts),
         "average": sum(word_counts) / len(word_counts),
     }
 
-
+# Creates the insights for the report in colloquial language.
 def build_insights(summary):
     """Generate plain-language insights for the report."""
     if summary["total"] == 0:
         return ["No responses were found in the data file."]
-
+# Explains the total number of responses in the response file.
     insights = []
     insights.append(
         f"There are {summary['total']} total responses in this dataset."
     )
+    # Explains the shortest and longest response lengths in the response file.
     insights.append(
         "Response length ranges from "
         f"{summary['shortest']} to {summary['longest']} words."
     )
+    # Explains the average response length in the response file.
     insights.append(
         f"The average response length is {summary['average']:.1f} words."
     )
+    # Explains the overall response length in the response file and how
+    # detailed they are based upon their average length.
     if summary["average"] >= 20:
         insights.append("Overall, responses are moderately detailed.")
     else:
