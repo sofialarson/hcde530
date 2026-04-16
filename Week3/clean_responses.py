@@ -6,6 +6,12 @@ OUTPUT_FILE = "responses_cleaned.csv"
 
 
 def clean_csv(input_path: str, output_path: str) -> None:
+    """Read survey CSV data, drop rows with empty names, and uppercase role values.
+
+    Args:
+        input_path: Path to the source CSV file.
+        output_path: Path where cleaned CSV data will be written.
+    """
     with open(input_path, mode="r", newline="", encoding="utf-8") as infile:
         reader = csv.DictReader(infile)
 
