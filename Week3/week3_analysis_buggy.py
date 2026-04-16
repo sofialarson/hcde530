@@ -42,7 +42,7 @@ for row in rows:
     if row["satisfaction_score"].strip():
         scored_rows.append((row["participant_name"], int(row["satisfaction_score"])))
 
-scored_rows.sort(key=lambda x: x[1])
+scored_rows.sort(key=lambda x: x[1], reverse=True)
 top5 = scored_rows[:5]
 
 print("\nTop 5 satisfaction scores:")
