@@ -28,16 +28,11 @@ for role, count in sorted(role_counts.items()):
 total_experience = 0
 valid_experience_count = 0
 for row in rows:
-    experience_text = (row.get("experience_years") or "").strip()
-    if not experience_text:
-        continue
-    try:
-        years = int(experience_text)
-    except ValueError:
-        # Skip malformed values like "fifteen" so analysis can continue.
-        continue
-    total_experience += years
-    valid_experience_count += 1
+    experience_text = row["experience_years"].strip()
+    if experience_text.isdigit():
+        total_experience += int(experience_text)
+        valid_experience_count += 1
+
 
 avg_experience = total_experience / valid_experience_count if valid_experience_count else 0
 print(f"\nAverage years of experience: {avg_experience:.1f}")
