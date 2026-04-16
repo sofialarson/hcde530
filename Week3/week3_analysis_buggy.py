@@ -33,7 +33,6 @@ for row in rows:
         total_experience += int(experience_text)
         valid_experience_count += 1
 
-
 avg_experience = total_experience / valid_experience_count if valid_experience_count else 0
 print(f"\nAverage years of experience: {avg_experience:.1f}")
 
