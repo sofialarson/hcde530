@@ -146,8 +146,6 @@ dfhouseholdincome = load_clean_census_csv(
 dfhouseholdincome_seattle = load_clean_census_csv(
     DATA_DIR / "Seattle Household Income for Past Year.csv"
 )
-dfhouseholdtypes = load_clean_census_csv(DATA_DIR / "Household Types.csv")
-dfchildrenunder18 = load_clean_census_csv(DATA_DIR / "Own Children under 18.csv")
 dfsexbyage = load_clean_census_csv(DATA_DIR / "Sex by Age.csv")
 dftotalpopulation = load_clean_census_csv(DATA_DIR / "Total Population.csv")
 dfhouseholdsfamilies = load_clean_households_families_csv(
