@@ -53,7 +53,7 @@ Then open the URL it prints in your browser.
 
 You can browse the full notebook with code and comments here:
 
-**[github.com/YOUR-USERNAME/YOUR-REPO-NAME/blob/main/MP2.ipynb](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME/blob/main/MP2.ipynb)**
+**[(https://github.com/sofialarson/hcde530/blob/main/MP2/MP2.ipynb)](https://github.com/sofialarson/hcde530/blob/main/MP2/MP2.ipynb)**
 This tool requires a live Python kernel and an Anthropic API key to run. To use it locally, clone the repo, add your API key to a .env file, and launch the notebook in JupyterLab.
 I'll include a link to a demonstration of this tool as a substitute to show that it works. 
 Please use this link to see the tool when fully functional: https://www.loom.com/share/1f90719b1c854d95819c2e23703f4b38
