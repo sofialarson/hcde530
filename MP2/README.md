@@ -54,9 +54,9 @@ Then open the URL it prints in your browser.
 You can browse the full notebook with code and comments here:
 
 **[github.com/YOUR-USERNAME/YOUR-REPO-NAME/blob/main/MP2.ipynb](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME/blob/main/MP2.ipynb)**
-
-GitHub renders Jupyter notebooks natively — you can read all the code and comments 
-without running anything.
+This tool requires a live Python kernel and an Anthropic API key to run. To use it locally, clone the repo, add your API key to a .env file, and launch the notebook in JupyterLab.
+I'll include a link to a demonstration of this tool as a substitute to show that it works. 
+Please use this link to see the tool when fully functional: https://www.loom.com/share/1f90719b1c854d95819c2e23703f4b38
 
 ## Note on API key security
 
